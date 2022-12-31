@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="web.css">
+	<title>web site</title>
+</head>
+<body>
+	
+	<header>
+		<div class="menu">
+			<div class="logo">
+				<h1>Logo</h1>
+			</div>
+
+			<button class="btn" onclick="btn()">menu</button>
+
+
+				<ul class="nav_menu" id="nav_menu">
+					<li><a href="">Home</a></li>
+					<li><a href="">about</a></li>
+					<li ><a >persone</a></li>
+					<li><a href="">card</a></li>
+				</ul>
+
+		</div>
+
+		<div class="header_img">
+			<div class="carusel">
+				<div class="carusel_text" id="carusel_01">
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores..</p>
+				</div>
+				<div class="carusel_text" id="carusel_02">
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit 02.</p>
+				</div>
+				<div class="carusel_btn">
+				<input type="button" value="предыдущий" onclick="prev()">
+				<input type="button" value="следующий" onclick="next()">
+			</div>
+				
+			</div>
+			
+		</div>		
+	</header>
+
+	<section>
+		<div class="section_head">
+			<h1>About</h1>
+		</div>
+		<div class="container">
+			<div class="contain">
+				<img src="images/portfolio-1.jpg" alt="">
+				<p>Lorem ipsum dolor sit, amet.</p>
+			</div>
+			<div class="contain">
+				<img src="images/portfolio-3.jpg" alt="">
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="contain">
+				<img src="images/portfolio-2.jpg" alt="">
+				<p>Lorem ipsum dolor sit amet consectetur.</p>
+			</div>
+			<div class="contain">
+				<img src="images/portfolio-5.jpg" alt="">
+				<p>Lorem ipsum dolor sit amet, consectetur.</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section>
+		<div class="section_head">
+			<h1>Person</h1>
+		</div>
+		
+		<div class="person">
+			<div class="person_img" >
+				<img src="images/team/member01-k.jpg" alt="" onmouseover="per_img(this)" onmouseout="next_img(this)" >
+			</div>
+			<div class="person_img">
+				<img src="images/team/member05-k.jpg" alt="" onmouseover="prev_img(this)" onmouseout="next_img02(this)">
+			</div>
+		</div>
+
+		<div class="person_text">
+			<input type="button" value="Developer" onclick="dev()">
+			<p id="person_demo"></p>
+		</div>
+
+	</section>
+
+
+	<footer>
+
+		<div class="container_footer">
+			<div class="footer_name">
+				<p>about</p>
+				<p>persone</p>
+				<p>contact</p>
+			</div>
+			<div class="footer_name">
+				<img src="images/portfolio-10.jpg " alt="" style="width: 200px;">
+			</div>
+			<div class="footer_name">
+				<p>about</p>
+				<p>persone</p>
+				<p>contact</p>
+			</div>
+		</div>
+
+		
+	</footer>
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/nav_menu.js"></script>
+
+</body>
+</html>

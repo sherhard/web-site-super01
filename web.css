@@ -1,0 +1,195 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.menu{
+	display: flex;
+	justify-content: space-around;
+	background: #2222;
+	
+}
+.logo:hover{
+	background: #444444;
+	color: gold;
+}
+.nav_menu{
+	margin-top: 30px;
+}
+.nav_menu li{
+	float: left;
+	list-style-type: none;
+}
+.nav_menu a:hover{
+	background: #000000;
+	color: gold;
+	border-radius: 10px;
+}
+.nav_menu  a{
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	text-transform: uppercase;
+	
+}
+
+.btn{
+	display: none;
+}
+
+@media screen and (max-width: 700px){
+	.menu{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.nav_menu{
+		text-align: center;
+		display: none;
+	}
+	.nav_menu li{
+		float: none;
+		padding: 10px;
+	}
+	.btn{
+		display: block;
+		width: 100px;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 20px;
+		font-weight: bold;
+		border-radius: 10px;
+
+	}
+	.btn:hover{
+		background: #444444;
+		color: gold;
+	}
+
+
+}
+
+
+.header_img{
+	background: url(images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 450px;
+
+}
+.carusel{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.carusel_text{
+	color: white;
+	font-size: 23px;
+}
+
+#carusel_01{
+	display: none;
+}
+
+#carusel_02{
+	display: block;
+}
+.carusel_btn input{
+	border-radius: 15px;
+	padding: 10px;
+}
+.carusel_btn input:hover{
+	background: black;
+	color: gold;
+}
+
+
+
+.section_head{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 40px;
+}
+.section_head :hover{
+	color: gold;
+}
+
+
+.container{
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	margin: 0 auto;
+}
+.contain{
+	margin: 5px;
+	position: relative;
+}
+.contain img{
+	width: 100%;
+
+}
+ .contain p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color:white;
+	font-size: 20px;
+}
+
+
+@media screen and (max-width: 700px){
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.person{
+	display: flex;
+	justify-content: space-around;
+}
+
+.person_img img{
+	width: 100%;
+}
+
+.person_text{
+	margin-top: 40px;
+	text-align: center;
+}
+.person_text input{
+	border-radius: none;
+	padding: 20px;
+	background: white;
+	border-radius: 7px;
+	font-size: 30px;
+}
+.person_text :hover{
+	background: black;
+	color: gold;
+}
+
+footer{
+	background: black;
+}
+
+.container_footer{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	height: 150px;
+}
+.footer_name img{
+	width: 100%;
+}
+.footer_name p{
+	color: white;
+}
